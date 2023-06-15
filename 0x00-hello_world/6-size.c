@@ -1,4 +1,6 @@
 #include<stdio.h>
+
+
 /**
  * main - entry poing
  *
@@ -12,10 +14,10 @@ int main(void)
 	long long int w;
 	float y;
 
-	printf("Size of a char: %lubyte(s)\n", (unsigned long)sizeof(j));
-	printf("Size of an int: %lubytes(s)\n", (unsigned long)sizeof(a));
-	printf("Size of a long int: %lubytes(s)\n", (unsigned long)sizeof(k));
-	printf("Size of a long long int: %lubytes(s)\n", (unsigned long)sizeof(w));
-	printf("Size of a float: %lu bytes(s)\n", (unsigned long)sizeof(y));
+	printf("Size of a char: %d byte(s)\n", sizeof(j));
+	printf("Size of an int: %d bytes(s)\n", sizeof(a));
+	printf("Size of a long int: %d bytes(s)\n", sizeof(k));
+	printf("Size of a long long int: %d ubytes(s)\n", sizeof(w));
+	printf("Size of a float: %d bytes(s)\n", sizeof(y));
 	return (0);
 }
