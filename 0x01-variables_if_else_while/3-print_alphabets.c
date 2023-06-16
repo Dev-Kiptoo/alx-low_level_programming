@@ -1,8 +1,8 @@
 #include<stdio.h>
 /**
- * Main - Entry pont
+ * main - Entry pont
  *
- * Return : Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
