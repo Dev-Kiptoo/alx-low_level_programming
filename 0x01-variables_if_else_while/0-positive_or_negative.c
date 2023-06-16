@@ -1,19 +1,19 @@
 #include <stdlib.h>
-#include <stdio.h>
 #include <time.h>
-
+#include <stdio.h>
 /**
- * Main - Entry point
+ * main - Entry Point
  *
- * Return : Always 0 (Successful)
+ * Return: 0 (Successful)
  */
 int main(void)
 {
+	/* your code is here */
+
 	int n;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	/* your code goes there*/
 
 	if (n > 0)
 	{
