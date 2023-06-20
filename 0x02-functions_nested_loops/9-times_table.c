@@ -1,7 +1,6 @@
 #include "main.h"
 /**
- * times_table _prints a table
- * @jkl: prints the  value of the three value
+ * times_table - prints a table
  * Return: Table
  */
 void times_table(void)
