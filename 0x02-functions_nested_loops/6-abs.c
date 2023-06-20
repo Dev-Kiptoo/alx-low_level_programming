@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _abs - prints the absolute
- * @int: the integer
+ * @n: the integer
  * Return: absolute of the int
  */
 int _abs(int n)
