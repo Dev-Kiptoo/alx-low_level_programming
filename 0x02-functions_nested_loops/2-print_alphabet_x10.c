@@ -1,10 +1,9 @@
 #include "main.h"
 /**
- * main - a program that prints a-z 10 times
- *
+ * print_alphabet_x10 - a program that prints a-z 10 times
  * Return: 0
  */
-int main(void)
+void print_alphabet_x10(void)
 {
 	int a;
 	char b;
@@ -12,12 +11,13 @@ int main(void)
 	a = 0;
 	while (a < 10)
 		{
-			for (b = 'a'; b <= 'z'; b++)
+			b = 'a';
+			while (b <= 'z')
 			{
 				_putchar(b);
+				b++;
 			}
 			a++;
 			_putchar('\n');
 		}
-	return (0);
 }
