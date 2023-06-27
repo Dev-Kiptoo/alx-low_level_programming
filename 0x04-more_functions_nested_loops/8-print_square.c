@@ -2,6 +2,7 @@
 /**
  * print_square - size
  * @size: size of the square
+ * @compiling code: gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 8-main.c 8-print_square.c -o 8-squares
  */
 void print_square(int size)
 {
@@ -10,11 +11,11 @@ void print_square(int size)
 		_putchar('\n');
 	} else
 	{
-		int i, j;
+		int a, b;
 
-		for (i = 0; i < size; i++)
+		for (a = 0; a < size; a++)
 		{
-			for (j = 0; j < size; j++)
+			for (b = 0; b < size; b++)
 			{
 				_putchar('#');
 			}
