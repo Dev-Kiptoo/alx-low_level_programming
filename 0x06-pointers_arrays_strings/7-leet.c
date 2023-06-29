@@ -2,7 +2,7 @@
 
 /**
  * *leet - a function that replaces some characters
- *
+ * @array: the array to be generated
  * Return: arr;
  */
 char *leet(char *arr)

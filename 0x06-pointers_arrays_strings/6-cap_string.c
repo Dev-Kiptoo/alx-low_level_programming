@@ -2,7 +2,7 @@
 
 /**
  * *cap_string - capitalize all words of a string
- * 
+ * @ar: the pointer to the character
  * Return: arr
 */
 char *cap_string(char *arr)
