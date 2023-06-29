@@ -1,57 +1,38 @@
 #include "main.h"
 
 /**
-<<<<<<< HEAD
- * *cap_string - capitalize all words of a string 
-=======
- * *cap_string - capitalize all words of a string
- * @ar: the pointer to the character
->>>>>>> 6bc4cbe8b45320620f92e984aaa08984e3027c8d
- * Return: arr
-*/
-char *cap_string(char *arr)
+ * cap_string - Capitalizes all words of a string.
+ * @str: The string to be capitalized.
+ *
+ * Return: A pointer to the changed string.
+ */
+char *cap_string(char *str)
 {
-<<<<<<< HEAD
-	bool capitalizeNext = true;
+	int index = 0;
 
-	while (*arr)
+	while (str[index])
 	{
-		if (isspace(*arr))
-		{
-			capitalizeNext = true;
-		}
-		else if (capitalizeNext)
-		{
-			*arr = toupper(*arr);
-			capitalizeNext = false;
-		}
-		else
-		{
-			*arr = tolower(*arr);
-		}
-		arr++;
+		while (!(str[index] >= 'a' && str[index] <= 'z'))
+			index++;
+
+		if (str[index - 1] == ' ' ||
+		    str[index - 1] == '\t' ||
+		    str[index - 1] == '\n' ||
+		    str[index - 1] == ',' ||
+		    str[index - 1] == ';' ||
+		    str[index - 1] == '.' ||
+		    str[index - 1] == '!' ||
+		    str[index - 1] == '?' ||
+		    str[index - 1] == '"' ||
+		    str[index - 1] == '(' ||
+		    str[index - 1] == ')' ||
+		    str[index - 1] == '{' ||
+		    str[index - 1] == '}' ||
+		    index == 0)
+			str[index] -= 32;
+
+		index++;
 	}
-	return (arr);
+
+	return (str);
 }
-=======
-        bool capitalizeNext = true;
-        while (*arr)
-        {
-                if (isspace(*arr))
-                {
-                        capitalizeNext = true;
-                }
-                else if (capitalizeNext)
-                {
-                        *arr = toupper(*arr);
-                        capitalizeNext = false;
-                }
-                else
-                {
-                        *arr = tolower(*arr);
-                }
-                arr++;
-        }
-        return (arr);
-}
->>>>>>> 6bc4cbe8b45320620f92e984aaa08984e3027c8d
