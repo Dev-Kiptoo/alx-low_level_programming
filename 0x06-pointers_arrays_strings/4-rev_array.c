@@ -10,6 +10,7 @@ void reverse_arrray(int *a, int n)
 {
 	int i = 0;
 	int end = n - 1;
+<<<<<<< HEAD
 
         while (i < end)
     	{
@@ -21,3 +22,16 @@ void reverse_arrray(int *a, int n)
     	}
    	 putchar('\n');
 }
+=======
+	
+	while (i < end)
+	{
+		int temp = a[i];
+		a[i] = a[end];
+		a[end] = temp;
+		n++;
+		end--;
+	}
+	putchar('\n');
+}
+>>>>>>> 6bc4cbe8b45320620f92e984aaa08984e3027c8d
