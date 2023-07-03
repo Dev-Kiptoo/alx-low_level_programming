@@ -1,18 +1,20 @@
 #include "main.h"
-
 /**
- * *string_toupper - function that converts lower case to uppercase
- * @arr: the pointer to the array to be changed to upper
- * Return: Uppercase
+ * string_toupper - change all lowercase to uppercase
+ * @n: pointer
+ *
+ * Return: n
  */
-char *string_toupper(char *arr)
+char *string_toupper(char *n)
 {
-	int i = 0;
+	int i;
 
-	while (arr[i] != '\0')
+	i = 0;
+	while (n[i] != '\0')
 	{
-		arr[i] = toupper(arr[i]);
+		if (n[i] >= 'a' && n[i] <= 'z')
+			n[i] = n[i] - 32;
 		i++;
 	}
-	return (arr);
+	return (n);
 }

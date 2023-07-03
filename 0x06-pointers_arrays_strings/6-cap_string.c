@@ -1,29 +1,38 @@
 #include "main.h"
 
 /**
- * *cap_string - capitalize all words of a string
- * @ar: the pointer to the character
- * Return: arr
-*/
-char *cap_string(char *arr)
+ * cap_string - Capitalizes all words of a string.
+ * @str: The string to be capitalized.
+ *
+ * Return: A pointer to the changed string.
+ */
+char *cap_string(char *str)
 {
-        bool capitalizeNext = true;
-        while (*arr)
-        {
-                if (isspace(*arr))
-                {
-                        capitalizeNext = true;
-                }
-                else if (capitalizeNext)
-                {
-                        *arr = toupper(*arr);
-                        capitalizeNext = false;
-                }
-                else
-                {
-                        *arr = tolower(*arr);
-                }
-                arr++;
-        }
-        return (arr);
+	int index = 0;
+
+	while (str[index])
+	{
+		while (!(str[index] >= 'a' && str[index] <= 'z'))
+			index++;
+
+		if (str[index - 1] == ' ' ||
+		    str[index - 1] == '\t' ||
+		    str[index - 1] == '\n' ||
+		    str[index - 1] == ',' ||
+		    str[index - 1] == ';' ||
+		    str[index - 1] == '.' ||
+		    str[index - 1] == '!' ||
+		    str[index - 1] == '?' ||
+		    str[index - 1] == '"' ||
+		    str[index - 1] == '(' ||
+		    str[index - 1] == ')' ||
+		    str[index - 1] == '{' ||
+		    str[index - 1] == '}' ||
+		    index == 0)
+			str[index] -= 32;
+
+		index++;
+	}
+
+	return (str);
 }
