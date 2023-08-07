@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "main.h"
 /*
- * read_textfile- Read text file print to STDOUT.
+ * read_textfile-reads a file to STDOUT
  * @filename: file to be opened
  * @letters: the actual number of the letters in the function
  * Return: w
